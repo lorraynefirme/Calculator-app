@@ -1,0 +1,83 @@
+body, h1, h2, p, ul, li {
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background: hsl(222, 26%, 31%);
+  font-family: 'Spartan', sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* HEADER */
+
+.calculator-main{
+  margin: 20px auto;
+  max-width: 440px;
+  padding: 15px;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+ 
+}
+.themes{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.options{
+  background: yellow;
+  display: flex;
+  flex-wrap: wrap;
+}
+.name-themes{
+  margin-right: 1rem;
+}
+
+/* SCREEN */
+.screen{
+  background: hsl(224, 36%, 15%);
+  height: 5rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  color: #EAE3DC;
+  font-size: 1.5rem;
+}
+
+/* KEYPAD */
+.keypad-calculator{
+  margin: 15px auto;
+  padding: 18px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: hsl(223, 31%, 20%);
+  border-radius: 10px;
+}
+.btn-keypad{
+  background: hsl(30, 25%, 89%);
+  width: 70px;
+  height: 55px;
+  margin: 10px;
+  font-family: 'Spartan', sans-serif;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 5px;
+}
+.reset, .equal{
+  width: 160px;
+}
