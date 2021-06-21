@@ -24,6 +24,12 @@ keypad.addEventListener('click', event => {
       screen.innerText += event.target.innerText
     }
 
+    if(event.target.innerText === 'DEL'){
+      const x = screen.innerText;
+      number = +screen.innerText;
+      screen.innerText = x.substr(0, x.length-1);
+    }
+
     number = +screen.innerText;
     
     if (event.target.innerText === 'RESET')
@@ -32,7 +38,6 @@ keypad.addEventListener('click', event => {
     if (event.target.innerText === '+' || event.target.innerText === '-' || event.target.innerText === '/' || event.target.innerText === 'X'){
       number1 = number;
       operator = event.target.innerText;
-      console.log(operator)
       screen.innerText = "";
     }
 
@@ -41,6 +46,9 @@ keypad.addEventListener('click', event => {
       console.log(operator, number1, number)
       screen.innerText = operacao(operator, number1, number)
     }
+
+ 
+    
 
   }
 
