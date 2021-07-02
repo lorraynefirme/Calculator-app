@@ -1,3 +1,4 @@
+/* RESET CSS */
 body, h1, h2, p, ul, li {
   margin: 0px;
   padding: 0px;
@@ -20,10 +21,23 @@ img {
   box-sizing: border-box;
 }
 
+/* VARIAVEIS CSS */
+:root {
+  --header-height: 3rem;
+
+  /*========== Colors ==========*/
+  --first-color: ;
+  --first-color-alt: ;
+  --title-color: ;
+  --text-color: ;
+  --text-color-light: ;
+
+
+}
 /* HEADER */
 
 .calculator-main{
-  margin: 20px auto;
+  margin: 5px auto;
   max-width: 440px;
   padding: 15px;
 }
@@ -74,8 +88,8 @@ img {
 }
 .btn-keypad{
   background: hsl(30, 25%, 89%);
-  width: 70px;
-  height: 55px;
+  flex: 1 1 65px;
+  height: 50px;
   margin: 10px;
   font-family: 'Spartan', sans-serif;
   font-size: 1.5rem;
@@ -84,4 +98,24 @@ img {
 }
 .reset, .equal{
   width: 160px;
+}
+
+@media screen and (max-width: 388px) {
+  .btn-keypad{
+    background: hsl(30, 25%, 89%);
+    flex: 1 1 60px;
+    height: 20;
+    margin: 8px;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width:200px) and (max-width: 351px) {
+  .btn-keypad{
+    background: hsl(30, 25%, 89%);
+    flex: 1 1 54px;
+    height: 45;
+    margin: 7px;
+    font-size: 0.9rem;
+  }
 }
